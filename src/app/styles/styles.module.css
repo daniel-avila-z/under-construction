@@ -89,14 +89,16 @@ display: none;
     opacity: 0.8;
   }
   .loader:before {
-    content: "{";
+    content: "<";
     display: inline-block;
-    animation: pulse 0.4s alternate infinite ease-in-out;
+    /* animation: pulse 0.4s alternate infinite ease-in-out; */
+    animation: pulse 2s alternate infinite linear;
   }
   .loader:after {
-    content: "}";
+    content: ">";
     display: inline-block;
-    animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+    /* animation: pulse 0.4s 0.3s alternate infinite ease-in-out; */
+    animation: pulse 2s 0.3s alternate infinite linear;
   }
 
   @keyframes pulse {
@@ -106,3 +108,7 @@ display: none;
     }
   }
       
+.contactContainer{
+  width: 60%;
+  line-height: 2rem;
+}
